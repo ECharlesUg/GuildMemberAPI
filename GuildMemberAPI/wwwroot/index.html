@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fellowship of the Code - Guild Members</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fellowship of the Code - Guild Members</h1>
+        <div id="message" class="message" style="display: none;"></div>
+        <table id="membersTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Contribution Points</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Members will be populated here -->
+            </tbody>
+        </table>
+        <h2 id="formTitle">Add New Member</h2>
+        <form id="memberForm">
+            <input type="hidden" id="memberId">
+            <input type="text" id="name" placeholder="Name" required>
+            <select id="role" required>
+                <option value="">Select Role</option>
+                <option value="Warrior">Warrior</option>
+                <option value="Mage">Mage</option>
+                <option value="Rogue">Rogue</option>
+                <option value="Cleric">Cleric</option>
+                <option value="Ranger">Ranger</option>
+            </select>
+            <input type="number" id="contributionPoints" placeholder="Contribution Points" min="0" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
